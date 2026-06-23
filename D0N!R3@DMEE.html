@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archive Access</title>
+</head>
+<body>
+    <h1>SECURITY CHECKPOINT</h1>
+
+    <p>What is the name of Subject 07?</p>
+
+    <input type="text" id="answer">
+    <button onclick="checkAnswer()">Submit</button>
+
+    <script>
+    function checkAnswer() {
+        let answer = document.getElementById("answer").value;
+
+        if(answer.toLowerCase() === "rebecca") {
+            window.location.href = "archive.html";
+        } else {
+            alert("ACCESS DENIED");
+        }
+    }
+    </script>
+</body>
+</html>
